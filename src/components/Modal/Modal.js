@@ -4,6 +4,7 @@ import { BoxModal, ModalWindowBox } from './Modal.styled';
 
 export class Modal extends Component {
   static propTypes = {
+    modalClose: PropTypes.func,
     children: PropTypes.node,
   };
 

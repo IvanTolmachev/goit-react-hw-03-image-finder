@@ -4,10 +4,11 @@ import { Item } from './ImageGallery.styled';
 
 export function ImageGallery({ images, modalOpen }) {
   return (
-    <Item onClick={modalOpen}>
+    <Item>
       {images.map(image => {
         return (
           <ImageGalleryItem
+            modalOpen={modalOpen}
             key={image.id}
             src={image.src}
             alt={image.alt}
